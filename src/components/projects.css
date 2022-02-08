@@ -1,0 +1,45 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#0E1414, #0E1414);
+}
+.projects_container{
+    padding: 30px 10px;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects_container > video {
+    border: 1px solid black;
+}
+
+.project_info{
+    color: white;
+    width: 500px;
+    padding: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+}
+
+.project_info > h2{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+    color: #ff9f10;
+    letter-spacing: 1px;
+}
+.project_info > p{
+    font-size: 0.9rem;
+    color: rgb(207, 204, 204);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
