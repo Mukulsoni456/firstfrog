@@ -45,8 +45,9 @@ background-color: rgb(255, 115, 0);
 }
 
 .main_logo > img{
-    width: 250px;
-    padding: 10px;
+    max-width: 200px;
+    margin-left: -10px;
+    object-fit: contain;
 
 }
 

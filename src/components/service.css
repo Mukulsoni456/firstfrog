@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
+    column-gap: 70px;
+    width: auto;
     height: 100%;
-    padding: 60px 0;
+    padding: 10px 0;
     flex-direction: row;
 }
