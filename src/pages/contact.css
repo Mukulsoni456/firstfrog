@@ -1,14 +1,12 @@
 .contact_form{
     margin-top: 30px;
-    width: 600px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
     padding: 20px;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
 }
 .contact_form > h1{
-    align-self: center;
     font-size: 2.5rem;
     font-weight: 600;
     color: white;
@@ -16,7 +14,7 @@
 }
 
 .contact_form> .input_container{
-    width: 200px;
+    max-width:100% ;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -28,11 +26,12 @@
     color: red;
 }
 .contact_form> .input_row > .input_container{
-    width: 200px;
+    max-width: 100%;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 
 }
 .contact_form> .input_row > .input_container > p{
@@ -43,13 +42,15 @@
 .input_row{
     width: 100%;
     display: flex;
+    column-gap: 6rem;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
 
 .input_field{
-    width: 200px;
+    width: 100%;
     font-size: 0.9rem;
     padding-bottom: 5px;
     height: 25x;
@@ -66,7 +67,7 @@
 }
 
 .input_container > select {
-    width: 200px;
+    max-width: 200px;
     height: 30px;
     background-color: transparent;
     color: rgb(255, 255, 255);
@@ -83,7 +84,7 @@
 }
 .contact_form :nth-child(5) > .input_field{
 
-    width: 100%;
+    max-width: 100%;
 }
 
 .contact_form > button{
@@ -94,3 +95,6 @@
     margin-top: 20px;
 }
 
+.contact_form > :nth-child(2) > .input_field{
+    max-width: 40%;
+}

@@ -79,7 +79,7 @@ function Contact({setSubmitted}) {
 
   </div>
   <div className='input_row'>
-    <div className="container"> 
+    <div className="input_container"> 
     <label htmlFor="CompanyName"></label>
       <input
       type="text"
