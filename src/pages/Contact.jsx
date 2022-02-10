@@ -3,13 +3,11 @@ import { useState } from 'react';
 import './contact.css'
 import db from "../features/firebase";
 import { addDoc, query, collection } from "firebase/firestore";
-import {useForm} from 'react-hook-form'
 
 
 const q = query(collection(db, "client"));
 
 function Contact({setSubmitted}) {
-  const {register, handleSubmit, formState :{errors}} = useForm()
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [ContactNo, setContactNo] = useState("");
@@ -32,7 +30,7 @@ function Contact({setSubmitted}) {
     setSubmitted(true);
   };
 
-  return <div><form onSubmit={handleSubmit(onSubmit)} className="contact_form">
+  return <div><form onSubmit={onSubmit} className="contact_form">
   <h1>Contact us</h1>
   <div className="input_container">
 
@@ -129,7 +127,7 @@ function Contact({setSubmitted}) {
   />
   </div>
 
-  <button type="submit" required >
+  <button type="submit"  required >
     Submit
   </button>
 </form></div>;
